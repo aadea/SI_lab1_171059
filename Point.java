@@ -1,5 +1,7 @@
+import java.util.List;
+
 class Point {
-	String id
+	String id;
 	double x,y;
 
 	//TODO add new variable
@@ -76,6 +78,15 @@ class Point {
 		System.out.println("x: "+x+" y: "+y);
 	}
 
+}
 
-
+class Canvas{
+	private Point A = new Point("a",3,4,"blue");
+	private Point B = new Point("b",3,-2,"white");
+	private ArrayList<Point> list = new ArrayList<Point>();
+	void add()
+	{
+		list.add(A);
+		list.add(B);
+	}
 }
